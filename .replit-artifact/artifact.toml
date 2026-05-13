@@ -1,0 +1,23 @@
+kind = "mobile"
+previewPath = "/shrimp-app/"
+title = "Gestão de Camarão"
+version = "1.0.0"
+id = "artifacts/shrimp-app"
+router = "expo-domain"
+
+[[integratedSkills]]
+name = "expo"
+version = "1.0.0"
+
+[[services]]
+ensurePreviewReachable = "/status"
+name = "expo"
+paths = [ "/shrimp-app/" ]
+localPort = 20665
+
+[services.development]
+run = "pnpm --filter @workspace/shrimp-app run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/shrimp-app", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/shrimp-app", "run", "serve" ]
