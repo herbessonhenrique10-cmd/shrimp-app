@@ -40,6 +40,15 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": "https://replit.com/"
+      },
+      "eas": {
+        "projectId": "48cd55ab-64ed-41ce-813b-3f1ac614fbd4"
+      }
+    },
+    "owner": "herbessonhenrique"
   }
 }
